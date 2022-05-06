@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SignupScreen1">
+
+    <Button
+        android:id="@+id/progress2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/progress"
+        android:layout_marginStart="190dp"/>
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/circle" />
+
+    <Button
+        android:id="@+id/progress3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="280dp"
+        android:background="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/sign_up"
+        android:textColor="#ef6d22"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="175dp"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/done"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="275dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="0.5dp"
+        android:layout_below="@id/done"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/inspiration"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:textColor="#ef6d22"
+        android:text="@string/first"
+        android:textStyle="bold"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/community"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:text="@string/second"
+        android:layout_below="@id/inspiration"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittextbackground"
+        android:text="@string/firstname"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/community"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+    android:id="@+id/SurName"
+    android:layout_width="350dp"
+    android:layout_height="45dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/edittextbackground"
+    android:text="@string/surname"
+    android:layout_marginStart="20dp"
+    android:textColor="@android:color/darker_gray"
+    android:layout_below="@id/firstName"
+    android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextbackground"
+        android:text="@string/location"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/SurName"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextbackground"
+        android:text="@string/gender"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/location"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextbackground"
+        android:text="@string/age"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/gender"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextbackground"
+        android:text="@string/number"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/age"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/number"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/next"
+        android:textColor="#ef6d22"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

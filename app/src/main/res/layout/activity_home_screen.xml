@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".HomeScreen">
+
+
+    <Button
+        android:id="@+id/inspire_tab"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/homebuttons"/>
+
+    <Button
+        android:id="@+id/learning_tab"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/inspire_tab"
+        android:background="@drawable/homebuttons" />
+
+    <Button
+        android:id="@+id/profile_tab"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/inspire_tab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/homebuttons" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/untitled1" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="@string/inspireTab"
+        android:textColor="#ef6d22"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="245dp"
+        android:src="@drawable/learning" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="@string/learning"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="230dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="@string/profile"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+</RelativeLayout>

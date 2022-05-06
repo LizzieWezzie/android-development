@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modules1">
+
+    <TextView
+        android:id="@+id/module"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ef6d22"
+        android:text="@string/modules"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="0.5dp"
+        android:layout_below="@id/module"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/module"
+        android:layout_marginTop="70dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="21sp"
+        android:text="@string/moduleGreeting"/>
+
+    <TextView
+        android:id="@+id/discover"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/info"
+        android:layout_marginTop="280dp"
+        android:text="@string/discover"
+        android:textColor="#ef6d22"
+        android:textSize="24sp"
+        android:layout_marginStart="240dp"
+        android:textStyle="bold" />
+</RelativeLayout>

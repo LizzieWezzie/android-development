@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SignUpScreen3">
+
+    <Button
+        android:id="@+id/progress2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle"
+        android:layout_marginStart="190dp"/>
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/circle" />
+
+    <Button
+        android:id="@+id/progress3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="280dp"
+        android:background="@drawable/progress" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="175dp"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="6dp"
+        android:text="@string/done"
+        android:textColor="#ef6d22"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="275dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="0.5dp"
+        android:layout_below="@id/done"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:textColor="#ef6d22"
+        android:text="@string/welcome"
+        android:textStyle="bold"
+        android:layout_below="@id/progress"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="70dp"
+        android:textSize="34sp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/black"
+        android:text="@string/student"
+        android:textStyle="bold"
+        android:layout_below="@id/done"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/welcome"
+        android:layout_marginStart="80dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/why"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:textColor="@android:color/black"
+        android:text="@string/why"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"/>
+
+    <RelativeLayout
+        android:id="@+id/option1"
+        android:layout_below="@id/why"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/dot_one"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:background="@drawable/options"
+            android:layout_toEndOf="@id/dot_one"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/option2"
+        android:layout_below="@id/option1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/dot_two"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:background="@drawable/options"
+            android:layout_toEndOf="@id/dot_two"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/option3"
+        android:layout_below="@id/option2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/dot_three"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:background="@drawable/options"
+            android:layout_toEndOf="@id/dot_three"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/option3"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/done2"
+        android:textColor="#ef6d22"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>

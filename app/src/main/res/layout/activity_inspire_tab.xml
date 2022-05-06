@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InspireTab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="0.5dp"
+            android:layout_marginTop="60dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="700dp">
+
+        <Button
+            android:id="@+id/inspire_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/untitled1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"/>
+
+        <Button
+            android:id="@+id/Learning_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/learning"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="180dp"/>
+
+        <Button
+            android:id="@+id/profile_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="310dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

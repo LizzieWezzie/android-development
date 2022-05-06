@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Submodules">
+
+    <TextView
+        android:id="@+id/module"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:textColor="#ef6d22"
+        android:text="@string/modules"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/first_module"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <ImageView
+                    android:id="@+id/module_one"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/view1"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/options"
+                    android:contentDescription="@string/modules" />
+                <ImageView
+                    android:id="@+id/option_one"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginStart="20dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_toEndOf="@id/module_one"/>
+
+                <ImageView
+                    android:id="@+id/option_two"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_one"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_one"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_one"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_module"
+                android:layout_width="match_parent"
+                android:layout_below="@id/first_module"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/module_two"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/modules"
+                    android:background="@drawable/options" />
+                <ImageView
+                    android:id="@+id/option_three"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/modules"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_two"/>
+
+                <ImageView
+                    android:id="@+id/option_four"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_two"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_three"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_two"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/third_module"
+                android:layout_width="match_parent"
+                android:layout_below="@id/second_module"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/module_three"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/modules"
+                    android:background="@drawable/options" />
+                <ImageView
+                    android:id="@+id/option_five"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/modules"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_three"/>
+
+                <ImageView
+                    android:id="@+id/option_six"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_three"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_five"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_three"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fourth_module"
+                android:layout_width="match_parent"
+                android:layout_below="@id/third_module"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/module_four"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/modules"
+                    android:background="@drawable/options" />
+                <ImageView
+                    android:id="@+id/option_seven"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/modules"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_four"/>
+
+                <ImageView
+                    android:id="@+id/option_eight"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_four"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_seven"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_four"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fifth_module"
+                android:layout_width="match_parent"
+                android:layout_below="@id/fourth_module"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/module_five"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/modules"
+                    android:background="@drawable/options" />
+                <ImageView
+                    android:id="@+id/option_nine"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/modules"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_five"/>
+
+                <ImageView
+                    android:id="@+id/option_ten"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_five"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_nine"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_five"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sixth_module"
+                android:layout_width="match_parent"
+                android:layout_below="@id/fifth_module"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/module_six"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/modules"
+                    android:background="@drawable/options" />
+                <ImageView
+                    android:id="@+id/option_eleven"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/modules"
+                    android:src="@drawable/options"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_six"/>
+
+                <ImageView
+                    android:id="@+id/option_twelve"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/module_six"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/modules"
+                    android:layout_below="@id/option_eleven"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/module_six"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:background="@drawable/discover"
+        android:text="@string/discover"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="680dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="800dp">
+
+        <Button
+            android:id="@+id/inspire_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/untitled1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"/>
+
+        <Button
+            android:id="@+id/Learning_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/learning_orange"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="180dp"/>
+
+        <Button
+            android:id="@+id/profile_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="310dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
